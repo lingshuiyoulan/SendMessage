@@ -20,11 +20,18 @@ public class MyService extends Service {
         Log.e(TAG, "onCreate() executed");
     }
 
+    String message = "";
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.e(TAG, "onStartCommand() executed");
-        String message = intent.getStringExtra("message");
-        SendMsgUtil.sendMessage(message);
+        message = intent.getStringExtra("message");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                SendMsgUtil.sendMessage(message);
+            }
+        }).start();
         return super.onStartCommand(intent, flags, startId);
     }
 
