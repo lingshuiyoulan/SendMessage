@@ -4,6 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
+
 import com.lanling.sendmessage.email.SendMsgUtil;
 
 /**
@@ -29,7 +30,7 @@ public class MyService extends Service {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                SendMsgUtil.sendMessage(message);
+                SendMsgUtil.sendMessage(message, "短信通知");
             }
         }).start();
         return super.onStartCommand(intent, flags, startId);

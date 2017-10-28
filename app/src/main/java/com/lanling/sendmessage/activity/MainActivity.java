@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv = (TextView) findViewById(R.id.tv_welcome);
-        tv.setText("欢迎使用短信转发功能");
+        tv.setText("欢迎使用来电短信通知功能");
     }
 
 }

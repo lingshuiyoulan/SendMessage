@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SendMessage.iml" filepath="$PROJECT_DIR$/SendMessage.iml" />
-      <module fileurl="file://D:\Idea\SendMessage\SendMessage.iml" filepath="D:\Idea\SendMessage\SendMessage.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\Idea\SendMessage\app\app.iml" filepath="D:\Idea\SendMessage\app\app.iml" />
     </modules>
   </component>
 </project>
